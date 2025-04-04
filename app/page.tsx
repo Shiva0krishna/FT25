@@ -60,6 +60,74 @@ const GradientBlob = ({
   );
 };
 
+const Timeline = () => {
+  const timelineEvents = [
+    {
+      year: "2013",
+      description:
+        "Founded in 2013, Team Full Throttle is driven by a passion for automotive engineering and motorsports. Committed to innovation, research, and hands-on learning, we bridge the gap between theory and practice, fostering a culture of engineering excellence.",
+    },
+    {
+      year: "2015",
+      description:
+        "By 2015, just a year after our founding, Team Full Throttle took on its first major project—designing our very first go-kart. This milestone transformed theoretical knowledge into real-world application, laying the foundation for continuous innovation and engineering excellence.",
+    },
+    {
+      year: "2016",
+      description:
+        "Team Full Throttle demonstrated outstanding performance at the official Go-Kart design, fabrication, and testing competition held at Lovely Professional University, Punjab, from March 18th to 21st, 2016.",
+    },
+    {
+      year: "2017",
+      description:
+        "Team Full Throttle showcased exceptional engineering and racing prowess at the official Go-Kart design, fabrication, and testing competition held at Kari Motor Speedway, Coimbatore, from January 14th to 17th, 2017.",
+    },
+    {
+      year: "2018",
+      description:
+        "In 2018, Team Full Throttle introduced Monster 3.0, a high-performance go-kart engineered for speed and precision. With advanced design and aerodynamics, it showcased the team's innovation and excellence in competitive racing.",
+    },
+    {
+      year: "2020",
+      description:
+        "The COVID-19 pandemic forced Team Full Throttle to shut down due to restrictions on gatherings, workshop access, and competitions. Despite the setback, the team’s spirit of innovation remained strong.",
+    },
+    {
+      year: "2025",
+      description:
+        "After a long pause due to COVID-19, Team Full Throttle is making a comeback in 2025! With renewed passion, fresh talent, and a drive to dominate the track, we're ready to race again. Full speed ahead!",
+    },
+  ];
+
+  return (
+    <section className="relative py-16 bg-[#F9FAFB]">
+      <div className="max-w-7xl mx-auto px-4">
+        <h2 className="text-4xl font-bold text-center text-[#00172D] mb-12">
+          Our Team History
+        </h2>
+        <div className="relative border-l-2 border-[#FD7702]">
+          {timelineEvents.map((event, index) => (
+            <div
+              key={event.year}
+              className={`mb-10 ml-6 ${
+                index % 2 === 0 ? "timeline-item-left" : "timeline-item-right"
+              }`}
+            >
+              <div className="absolute w-6 h-6 bg-[#FD7702] rounded-full -left-3 border-2 border-white"></div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-lg font-semibold text-[#FD7702]">
+                  {event.year}
+                </h3>
+                <p className="text-[#00172D] mt-2">{event.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
 const Portfolio = () => {
   const [activeSection, setActiveSection] = useState("hero");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -174,6 +242,8 @@ const Portfolio = () => {
             </motion.p>
           </motion.div>
         </section>
+
+        <Timeline />
 
         <section id="experience" className="relative min-h-screen py-32">
           <div className="max-w-7xl mx-auto px-4 z-20 relative">
