@@ -220,9 +220,11 @@ const Portfolio = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="mono text-sm text-[#E49B0F] mb-4 tracking-widest"
+              className="mono text-sm text-[#FF5003] mb-4 tracking-widest"
             >
-              PUSHING THE BOUNDARIES OF GO-KARTING EXCELLENCE
+              <blockquote className="text-2xl font-light italic">
+                  “Driving Talents Forging Leaders”
+                </blockquote>
             </motion.div>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
