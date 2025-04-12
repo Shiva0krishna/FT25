@@ -63,7 +63,7 @@ const AboutUs = () => {
             <div className="border-l-4 border-[#FF6B35] pl-4">
               <h2 className="text-3xl font-bold text-[#2a2a56]">About Us</h2>
             </div>
-            <p className="text-lg leading-relaxed">
+            <p className="text-lg leading-relaxed text-gray-700">
               <strong>Team Full Throttle</strong> is a dynamic and passionate group of 
               student engineers, designers, and automotive enthusiasts from 
               <strong> SRMIST, KTR</strong>, dedicated to pushing the boundaries of 
@@ -75,12 +75,12 @@ const AboutUs = () => {
           </motion.div>
           <motion.div 
             variants={fadeIn}
-            className="bg-gradient-to-br from-[#FF6B35]/10 to-[#FF881B]/10 p-2 rounded-2xl"
+            className="p-2 rounded-2xl shadow-lg"
           >
             <img 
               src="/img3.jpg" 
               alt="Go-Kart Team"
-              className="rounded-xl w-full h-auto max-h-96 object-contain shadow-lg"
+              className="rounded-xl w-full h-auto max-h-96 object-cover"
             />
           </motion.div>
         </motion.section>
@@ -92,7 +92,6 @@ const AboutUs = () => {
           viewport={{ once: true }}
           className="relative py-16"
         >
-          <div className="absolute inset-0 bg-[#2a2a56]/5 -skew-y-2 transform origin-top-left" />
           <div className="relative max-w-4xl mx-auto px-4">
             <motion.div 
               variants={slideUp}
@@ -100,12 +99,12 @@ const AboutUs = () => {
             >
               <div className="flex-1 space-y-4">
                 <h3 className="text-2xl font-bold text-[#FF6B35]">Our Mission</h3>
-                <p className="text-lg leading-relaxed">
+                <p className="text-lg leading-relaxed text-gray-700">
                   To design and develop <strong>high-performance ICE go-karts</strong> 
                   that balance speed, efficiency, and reliability through rigorous 
                   research, simulation, and prototyping. We push karting technology 
                   limits while promoting <strong>innovation</strong> and 
-                  <strong> sustainability</strong> in motorsports.
+                  <strong>sustainability</strong> in motorsports.
                 </p>
               </div>
               <div className="bg-[#FF6B35] text-white p-8 rounded-2xl shadow-xl md:w-96">
@@ -118,7 +117,7 @@ const AboutUs = () => {
           </div>
         </motion.section>
 
-        {/* Department & Institute */}
+        {/* Department & Institute Section */}
         <motion.section 
           initial="initial"
           whileInView="animate"
@@ -128,7 +127,7 @@ const AboutUs = () => {
         >
           <motion.div 
             variants={slideUp}
-            className="bg-white p-8 rounded-2xl border-2 border-[#FF6B35] shadow-lg"
+            className="bg-white p-8 rounded-2xl border border-gray-300 shadow-lg"
           >
             <div className="flex items-center gap-4 mb-6">
               <div className="p-3 bg-[#FF6B35] rounded-lg text-white">
@@ -136,7 +135,7 @@ const AboutUs = () => {
               </div>
               <h3 className="text-2xl font-bold text-[#2a2a56]">Our Department</h3>
             </div>
-            <p className="leading-relaxed">
+            <p className="leading-relaxed text-gray-700">
               The <strong>Department of Automobile Engineering</strong> at SRMIST KTR, 
               established in <strong>2004</strong>, features:
               <ul className="list-disc pl-5 mt-4 space-y-2">
@@ -150,7 +149,7 @@ const AboutUs = () => {
 
           <motion.div 
             variants={slideUp}
-            className="bg-white p-8 rounded-2xl border-2 border-[#2a2a56] shadow-lg"
+            className="bg-white p-8 rounded-2xl border border-gray-300 shadow-lg"
           >
             <div className="flex items-center gap-4 mb-6">
               <div className="p-3 bg-[#2a2a56] rounded-lg text-white">
@@ -158,7 +157,7 @@ const AboutUs = () => {
               </div>
               <h3 className="text-2xl font-bold text-[#2a2a56]">Our Institute</h3>
             </div>
-            <p className="leading-relaxed">
+            <p className="leading-relaxed text-gray-700">
               <strong>SRMIST</strong> is a premier Indian university renowned for:
               <ul className="list-disc pl-5 mt-4 space-y-2">
                 <li>Cutting-edge Research Facilities</li>
@@ -169,7 +168,6 @@ const AboutUs = () => {
             </p>
           </motion.div>
         </motion.section>
-
       </main>
 
       <Footer />
