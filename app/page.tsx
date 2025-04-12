@@ -146,14 +146,33 @@ const Portfolio = () => {
 
   const experiences: Array<ProjectCardProps> = [
     {
-      id: "00",
+      id: "",
       title: "GO_KARTING",
-      subtitle: "CONTRACT SOFTWARE ENGINEER",
-      period: "Mar. 2025 - Present",
+      subtitle: "",
+      period: "",
       description:
-        "Collaborating with the Browserbase team to build a cool new tool :)",
-      tags: ["Browser Agents"],
+        "Team Full Throttle is driven by a passion for automotive engineering and motorsports. Committed to innovation, research, and hands-on learning, we bridge the gap between theory and practice, fostering a culture of engineering excellence.",
+      tags: [" Team - Full Throttle"],
       imageSrc: "/img1.jpg",
+      links: {
+        // github: "#",
+        live: "/",
+      },
+      metrics: {
+        // reliability: "+50%",
+        // latency: "-27%",
+        // "cognitive load": "-40%",
+      },
+    },
+    {
+      id: "",
+      title: "GO_KARTING",
+      subtitle: "",
+      period: "2025",
+      description:
+        "Team Full Throttle is making a comeback in 2025! With renewed passion, fresh talent, and a drive to dominate the track, we're ready to race again. Full speed ahead!",
+      tags: ["SRMIST, ktr"],
+      imageSrc: "/img2.jpg",
       links: {
         // github: "#",
         live: "/",

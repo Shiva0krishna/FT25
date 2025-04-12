@@ -46,12 +46,12 @@ const ProjectCard = ({
       </div>
 
       <div
-        className="bg-gray-900/30 backdrop-blur-md rounded-lg border border-gray-800/30
-                    group-hover:border-gray-700/50 transition-all duration-500
+        className="bg-white backdrop-blur-md rounded-lg border border-gray-300
+                    group-hover:border-gray-400 transition-all duration-500
                     shadow-[0_0_15px_rgba(0,0,0,0.1)]"
       >
         <div className="relative w-full aspect-[16/9] overflow-hidden">
-          <div className="absolute top-0 left-0 right-0 h-8 bg-gray-900/90 backdrop-blur-md flex items-center px-4 gap-2 z-10">
+          <div className="absolute top-0 left-0 right-0 h-8 bg-white/90 backdrop-blur-md flex items-center px-4 gap-2 z-10">
             <div className="flex gap-1.5">
               <div className="w-2.5 h-2.5 rounded-full bg-red-500/80" />
               <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/80" />
@@ -85,7 +85,7 @@ const ProjectCard = ({
             <h3 className="text-2xl md:text-3xl font-light tracking-tight">
               {title}
             </h3>
-            <p className="text-gray-400 max-w-2xl">{description}</p>
+            <p className="text-gray-500 max-w-2xl font-semibold">{description}</p> {/* Highlighted description */}
           </motion.div>
 
           <motion.div
@@ -132,24 +132,6 @@ const ProjectCard = ({
             transition={{ duration: 0.5, delay: 0.6 }}
             className="flex gap-4"
           >
-            {links.github && (
-              <a
-                href={links.github}
-                className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors px-4 py-2 rounded-md bg-gray-800/30 border border-gray-700/20"
-              >
-                <Github size={18} />
-                <span>GitHub</span>
-              </a>
-            )}
-            {links.live && (
-              <a
-                href={links.live}
-                className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors px-4 py-2 rounded-md bg-gray-800/30 border border-gray-700/20"
-              >
-                <Globe size={18} />
-                <span>Live</span>
-              </a>
-            )}
           </motion.div>
         </div>
       </div>

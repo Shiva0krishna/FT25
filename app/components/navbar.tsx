@@ -63,7 +63,7 @@ const Navbar = () => {
               <span className="absolute -bottom-1 left-0 w-full h-px bg-[#FD7702] transform scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100" />
             </span>
           </Link>
-          <Link
+          {/* <Link
             href="/race-with-us"
             className="group flex items-center gap-2 text-white hover:text-[#FD7702] transition-colors relative"
           >
@@ -71,7 +71,7 @@ const Navbar = () => {
               Race with Us
               <span className="absolute -bottom-1 left-0 w-full h-px bg-[#FD7702] transform scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100" />
             </span>
-          </Link>
+          </Link> */}
           <Link
             href="/contact-us"
             className="group flex items-center gap-2 text-white hover:text-[#FD7702] transition-colors relative"
@@ -127,13 +127,13 @@ const Navbar = () => {
             >
               Our Gallery
             </Link>
-            <Link
+            {/* <Link
               href="/race-with-us"
               className="text-white hover:text-[#FFD700] transition-colors"
               onClick={toggleMenu}
             >
               Race with Us
-            </Link>
+            </Link> */}
             <Link
               href="/contact-us"
               className="text-white hover:text-[#FFD700] transition-colors"

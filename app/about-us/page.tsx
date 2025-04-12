@@ -75,12 +75,12 @@ const AboutUs = () => {
           </motion.div>
           <motion.div 
             variants={fadeIn}
-            className="bg-gradient-to-br from-[#FF6B35]/10 to-[#FF881B]/10 p-8 rounded-2xl"
+            className="bg-gradient-to-br from-[#FF6B35]/10 to-[#FF881B]/10 p-2 rounded-2xl"
           >
             <img 
-              src="/gokart-image.jpg" 
+              src="/img3.jpg" 
               alt="Go-Kart Team"
-              className="rounded-xl w-full h-64 object-cover shadow-lg"
+              className="rounded-xl w-full h-auto max-h-96 object-contain shadow-lg"
             />
           </motion.div>
         </motion.section>
